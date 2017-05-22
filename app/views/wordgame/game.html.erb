@@ -1,0 +1,23 @@
+<h1>Longest Word Game</h1>
+
+<form action="/score" method="get">
+  <input type="text" name="text" placeholder="take a guess">
+  <input type="submit">
+  <input type="hidden" name="grid" value="@grid" >
+</form>
+
+
+<p> "******** Welcome to the longest word-game !********"
+"Here is your grid :" </p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-1">
+    <% @grid.each do |letter| %>
+    <b> <%= letter %>  </b>
+    <% end %>
+    </div>
+</div>
+
+
+
